@@ -135,7 +135,8 @@ AWS Global infrastructure consist of:
 ## AWS:- Compute Services
 ### Amazon EC2 (Virtual server)
 <p> Amazon Elastic Compute Cloud provides scalable computing capacity in the Amazon Web Services Cloud. Amazon EC2 can be used to launch virtual severs, configure security and networking and manage storage. EC2 also enable scaling up or down to handle changes in requirement and spikes.</p>
-*Reduce risk*: Durable and secure, avoid risk of physical media handling.
+
+***Reduce risk***: Durable and secure, avoid risk of physical media handling.
 
 ### Amazon EC2: Instance Types
 * ***General Purpose***: M1, M3, M4
