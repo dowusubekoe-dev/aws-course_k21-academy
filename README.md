@@ -2,7 +2,7 @@
 
 ## Introduction to Cloud Computing
 ### Traditional Architecture
-Companies were hosting all their servers and other network resources either in the office or a data center (on-premise).
+<p> Companies were hosting all their servers and other network resources either in the office or a data center (on-premise).</p>
 
 ### Problems with Traditional Architecture
 - Payment for the data center (rent)
@@ -13,8 +13,8 @@ Companies were hosting all their servers and other network resources either in t
 - How to deal with natural disasters
 
 ### What is Cloud  Computing?
-Clouding computing is the delivery of computing services: *servers*, *storage*, *databases*, *networking tools*, and *software* over the internet.
-Cloud Computing enables companies to consume a compute resources (servers, storage, or application).
+<p> Clouding computing is the delivery of computing services: *servers*, *storage*, *databases*, *networking tools*, and *software* over the internet.
+Cloud Computing enables companies to consume a compute resources (servers, storage, or application).</p>
 
 ### Cloud Computing Characteristics
 * On-demand self-service (No human intervention needed to get resources)
@@ -23,9 +23,9 @@ Cloud Computing enables companies to consume a compute resources (servers, stora
 * Rapid elasticity (Get more resources quickly as needed)
 * Measured services (Pay only for what you consume)
 
-**Converting**: *Capital Expense (Capex) into Operational Expense (Opex)*
-**Capex**: *is upfront investment*
-**Opex**: *is pay as you go*
+***Converting***: *Capital Expense (Capex) into Operational Expense (Opex)*
+***Capex***: *is upfront investment*
+***Opex***: *is pay as you go*
 
 ### Benefits of Cloud Computing
 * Highly scalable
@@ -37,28 +37,28 @@ Cloud Computing enables companies to consume a compute resources (servers, stora
 * Disaster recovery
 * No location constraints
 
-*High Availability*: maintaining acceptable continuous performance despite temporary load fluctuations or failure in services, hardware and datacenter.
-*Disaster Recover*y*: involves a set of policies, tools and procedures to enable recovery or continuation of vital technology infrastructure and systems. When designing Disaster Recovery, consider *RPO* (Recovery Point Objective) and *RTO* (Recovery Time Objective). Also know as *BCP* (Business Continuity Planning).
+*High Availability*: <p> maintaining acceptable continuous performance despite temporary load fluctuations or failure in services, hardware and datacenter.</p>
+*Disaster Recover*y*: <p> involves a set of policies, tools and procedures to enable recovery or continuation of vital technology infrastructure and systems. When designing Disaster Recovery, consider ***RPO*** (Recovery Point Objective) and ***RTO*** (Recovery Time Objective). Also know as ***BCP*** (Business Continuity Planning).</p>
 *Fault Tolerance*: systems ability to continue operations properly when one or more of its components fails.
 *Cloud Scalability*: is a strategic operation for adding computing resources to support demand. The need to have a system that can handle growth is very important.
 > - *Scale-out/Horizontal Scaling*: upgrade the capacity of the app by increasing the number of host instances. Ex: Load Balancer where app is hosted on multiple instances. Normally done on the application servers or on the frontend.
 > - *Scale-up/Vertical Scaling*: upgrade the capacity of the host where the app is hosted. Ex: increase RAM from 4 to 8 cores. Generally done on the database side.
-*Cloud Elasticity*: represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.
+*Cloud Elasticity*: <p> represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.</p>
 *Using an Agile environment provided by AWS Cloud, I can release application features much faster than a traditional On-Premise environment*
 
 ### Cloud Service Model
-*Traditional On-Premise* - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
+***Traditional On-Premise*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
 Green: Client Manages
 
-*IaaS* - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
-Green: Client Manages
-Red: Amazon Manages
-
-*PaaS* - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
+***IaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
 Green: Client Manages
 Red: Amazon Manages
 
-*SaaS* - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
+***PaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
+Green: Client Manages
+Red: Amazon Manages
+
+***SaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
 Red: Amazon Manages
 
 ### Cloud Deployment Model
@@ -90,59 +90,60 @@ Lambda	                Azure Functions	            Cloud Functions
 
 ### AWS Global Infrastructure
 AWS Global infrastructure consist of:
-> * **Region****: A group of Availability Zones
-> * **Availability Zones**: Multiple Datacenters distance apart
+* ***Region***: A group of Availability Zones
+* ***Availability Zones***: Multiple Datacenters distance apart
 
 ### AWS Services
 #### Deployment & Management
-		Application Services: Amazon SQS, Amazon Elastic Transcoder, Amazon SES, Amazon AppStream, Amazon Cloud Search
-		Mobile Services: Amazon Cognito, Amazon Mobile Analytics, Amazon SNS		
-		Enterprise Applications: Amazon WorkDocs, Amazon WorkSpaces, Amazon WorkMail
+***Application Services***: Amazon SQS, Amazon Elastic Transcoder, Amazon SES, Amazon AppStream, Amazon Cloud Search
+***Mobile Services***: Amazon Cognito, Amazon Mobile Analytics, Amazon SNS		
+***Enterprise Applications***: Amazon WorkDocs, Amazon WorkSpaces, Amazon WorkMail
 
 #### Application Services
-		Administration & Security: AWS Directory Service, AWS Identity & Access Management, AWS Trusted Advisor, AWS Config, AWS CloudTrail, Amazon CloudWatch
-		Deployment & Management: AWS Cloud Formation, AWS OpsWorks, AWS CodeDeploy
-		Analytics: Amazon Kinesis, AWS Data Pipeline, Amazon EMR
+***Administration & Security***: AWS Directory Service, AWS Identity & Access Management, AWS Trusted Advisor, AWS Config, AWS CloudTrail, Amazon CloudWatch
+***Deployment & Management***: AWS Cloud Formation, AWS OpsWorks, AWS CodeDeploy
+***Analytics***: Amazon Kinesis, AWS Data Pipeline, Amazon EMR
 
 #### Foundation Services
-		Compute: Amazon EC2, AWS Lambda
-		Storage & Content Delivery: Amazon CloudFront, Amazon Glacier, AWS Storage Gateway, Amazon Content Delivery
-		Database: Amazon Dynamo DB, Amazon RDS, Amazon Redshift, Amazon Elastic Cache
-		Networking: Amazon Route53, Amazon VPC, Amazon Direct Connect
+***Compute***: Amazon EC2, AWS Lambda
+***Storage & Content Delivery***: Amazon CloudFront, Amazon Glacier, AWS Storage Gateway, Amazon Content Delivery
+***Database***: Amazon Dynamo DB, Amazon RDS, Amazon Redshift, Amazon Elastic Cache
+***Networking***: Amazon Route53, Amazon VPC, Amazon Direct Connect
 
 ### How to Access AWS Resources
-* Console: simple web-based user interface (Android, iOS) to access AWS services
-* CLI: use to manage AWS resources and automates service management. Mac, Linux, and Windows OS support
-* SDK: All major programming languages has compatibility with AWS SDK
+* ***Console***: simple web-based user interface (Android, iOS) to access AWS services
+* ***CLI***: use to manage AWS resources and automates service management. Mac, Linux, and Windows OS support
+* ***SDK***: All major programming languages has compatibility with AWS SDK
 
-IAM Users, Group, Policy, Role
-IAM service securely control individual and group access to your AWS resources.
-* IAM User: individual who has a set of permissions. User has the credentials to make API calls in order to communicate with AWS resources.
-* IAM Group: collection of IAM users. Users in a group can access the permissions assigned to that group.
-* IAM Policies: specifies those permissions that you want to acquire.
-* IAM Roles: define a set of permissions for making AWS service requests. Roles are basically assigned to the applications.
+### IAM Users, Group, Policy, Role
+*IAM service securely control individual and group access to your AWS resources.*
+* *IAM User*: individual who has a set of permissions. User has the credentials to make API calls in order to communicate with AWS resources.
+* *IAM Group*: collection of IAM users. Users in a group can access the permissions assigned to that group.
+* *IAM Policies*: specifies those permissions that you want to acquire.
+* *IAM Roles*: define a set of permissions for making AWS service requests. Roles are basically assigned to the applications.
 
-AWS Security Token Service (STS)
-Is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate
+### AWS Security Token Service (STS)
+<p> Is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate.</p>
 
-Firewall: NACL & Security Group
-A security group acts as a virtual firewall for your instances to control inbound and outbound traffic. Five (5) security groups can be assigned to an instance after creating it. Security Groups act at the instance level but not at the subnet level. Only Allow rules can be created in a security group.
+### Firewall: NACL & Security Group
+<p> A *security group* acts as a virtual firewall for your instances to control inbound and outbound traffic. Five (5) security groups can be assigned to an instance after creating it. Security Groups act at the instance level but not at the subnet level. Only Allow rules can be created in a security group.</p>
 
-A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. Allow and Deny rules can be created under ACL.
+<p> A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. Allow and Deny rules can be created under ACL.</p>
 
-AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across wide range of AWS Services and in your applications. AWS KMS is a secured and resilient service that uses hardware security modules that have been validated under FIPS 140-2. It is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet regulatory and compliance needs.
+<p> AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across wide range of AWS Services and in your applications. AWS KMS is a secured and resilient service that uses hardware security modules that have been validated under FIPS 140-2. It is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet regulatory and compliance needs.</p>
 
-AWS:- Compute Services
-Amazon EC2 (Virtual server)
-Amazon Elastic Compute Cloud provides scalable computing capacity in the Amazon Web Services Cloud. Amazon EC2 can be used to launch virtual severs, configure security and networking and manage storage. EC2 also enable scaling up or down to handle changes in requirement and spikes. Reduce risk: Durable and secure, avoid risk of physical media handling
+## AWS:- Compute Services
+### Amazon EC2 (Virtual server)
+<p> Amazon Elastic Compute Cloud provides scalable computing capacity in the Amazon Web Services Cloud. Amazon EC2 can be used to launch virtual severs, configure security and networking and manage storage. EC2 also enable scaling up or down to handle changes in requirement and spikes.</p>
+*Reduce risk*: Durable and secure, avoid risk of physical media handling.
 
-Amazon EC2: Instance Types
-* General Purpose: M1, M3, M4
-* Compute Optimized: C1, CC2, C3, C4
-* Storage and IO Optimized: HI1, HS1, I2, I2, D2
-* GPU Enabled: CG1, G2
-* Memory Optimized: M2, CR1, R3
-* Smaller instances: T1, T2
+### Amazon EC2: Instance Types
+* ***General Purpose***: M1, M3, M4
+* ***Compute Optimized***: C1, CC2, C3, C4
+* ***Storage and IO Optimized***: HI1, HS1, I2, I2, D2
+* ***GPU Enabled***: CG1, G2
+* ***Memory Optimized***: M2, CR1, R3
+* ***Smaller instances***: T1, T2
 
 Amazon EC2: Purchasing Options
 * On-Demand Instances: Pay by the hour (Purchasing Options)
@@ -192,10 +193,7 @@ AWS Lambda is a server less compute service that allows you to run code without 
 No manual configuration is done on AWS Lambda but rather run or execute anything as a function. The function is stored in memory and called by a trigger to execute the code. The results is displayed to the user and after that, the system goes into sleep mode. The client only pays for time that code was executed. Lambda can be automatically triggered from 140 AWS Services.
 
 
-AWS:- Storage Services
-￼
-
-￼
+## AWS:- Storage Services
 File Storage
 Amazon EFS
 Amazon EFS (Windows OS) is a regional service. It stores data in and across multiple Availability Zones. File Storage for use with Amazon EC2.
@@ -267,8 +265,7 @@ Data Transfer
 * Amazon FSX (Linux OS): 	
 
 
-AWS:- Networking Services
-￼
+## AWS:- Networking Services
 1. Virtual Private Cloud
 VPC helps to isolate your infrastructure from the rest of the world and keep it secured and safe inside your control. VPC should be inside a Region and a subnet is created inside a Region and inside the subnet, you create EC2 instances.
 Amazon creates;
@@ -322,7 +319,7 @@ Amazon Route 53:
 * Multivalued Routing Policy
 
 
-AWS:- Databases
+## AWS:- Databases
 Database is a collection of individual data items which is stored in a highly structured manner.
 Types of AWS Database Services
 - Relational (Amazon Aurora, Amazon RDS)
@@ -439,7 +436,7 @@ Performance	Optimized for storage	Optimized for compute
 Scaling	Vertical Scaling	Horizontal scaling (cluster of DBs)
 
 
-AWS:- Automation & Configuration Management
+## AWS:- Automation & Configuration Management
 Is a IaC spectrum and open source 
 AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. 
 CloudFormation template describes your desired resources and their dependencies - making the launch and configuration together as a stack.
@@ -452,7 +449,7 @@ AWS OpsWorks is a configuration management service that provides managed instanc
 * Shutdown: occurs before the associated EC2 instances is actually terminated.
 
 
-AWS:- Audit & Monitoring
+## AWS:- Audit & Monitoring
 AWS CloudTrail: helps to track user activity and API usage which allows for operational and risk auditing of your AWS infrastructure.
 	- Monitoring and auditing of IT infrastructure for compliance
 	- Log and monitor account activities and even history
@@ -474,7 +471,7 @@ The CloudWatch dashboard feature enables you to access all the metrics for you
 AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices. Categories include Performance and Fault tolerance.
 
 
-AWS:- Application Services SNS, SES, SQS, & SWF
+## AWS:- Application Services SNS, SES, SQS, & SWF
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 * A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, micro servers and event-driven sever less applications.
 * A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
@@ -484,7 +481,7 @@ Amazon Simple Email Service (SES) is a cost-effective, flexible, and scalable em
 Amazon SWF helps developers build, run, and scale background jobs that have parallel or sequential steps. Also known as a fully managed state tracker and task coordinator in the cloud.
 
 
-AWS:- DevOps Tools
+## AWS:- DevOps Tools
 AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. Helps team to collaborate on code in a highly scalable ecosystem. Eliminates the need to operate your own source control system.
 
 AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. No need to provision, manage, and scale your own servers so it scales continuously  and processes multiple builds concurrently.
@@ -503,7 +500,7 @@ AWS CodePipeline is a fully managed continuous delivery service that helps you a
 AWS CodeStar is a cloud-based development service that provides the tools you need to quickly develop, build, and deploy application on AWS.
 
 
-AWS:- Security
+## AWS:- Security
 Shared Responsibility Model
 AWS controls the security of the cloud and the customer controls the security in the cloud.
 ￼
@@ -577,7 +574,7 @@ AWS Power User
 A Power user can have access to every service but limited to IAM.
 
 
-AWS:- Pricing and Support
+## AWS:- Pricing and Support
 AWS Partner Network: is the global community of Partners who leverage Amazon Web Services to build solutions and services to customers.
 - Build, market, and sell with AWS Partner Network
 - Build AWS expertise
@@ -590,7 +587,7 @@ All Upfront - Pay less when you reserve
 Pay even less per unit by using more
 
 
-AWS:- Five Pillars of the Well-Architected Framework
+## AWS:- Five Pillars of the Well-Architected Framework
 	- Operational Excellence: run, manage, and monitor production workload to deliver business value and continuous improvement on support process and events
 	- Security: protecting information systems and assets from outside world with risk assessment, unplanned failures and mitigation strategies
 	- Reliability: auto recover workload from infrastructure, power or system failures with dynamic resource management to meet operational threshold
