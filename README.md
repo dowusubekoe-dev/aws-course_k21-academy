@@ -146,13 +146,13 @@ AWS Global infrastructure consist of:
 * ***Memory Optimized***: M2, CR1, R3
 * ***Smaller instances***: T1, T2
 
-Amazon EC2: Purchasing Options
-* On-Demand Instances: Pay by the hour (Purchasing Options)
-* Reserved Instances: Purchase, at a significant discount instance that are always available. 1 - 3yrs terms. (Purchasing Options)
-* Scheduled Instances: Purchase instances that are always available on the specified recurring schedule for a one-year term. (Purchasing Options)
-* Spot Instances: Bid on unused instances which can run as long as they are available and your bid is above the SPOT price. (Purchasing Options)
-* Dedicated Instances: Pay, by the hour, for instances that run on single-tenant hardware (Tenancy Models)
-* Dedicated Hosts: Pay for a physical host that is fully dedicated to running your instances (Tenancy Models)
+### Amazon EC2: Purchasing Options
+* ***On-Demand Instances***: Pay by the hour (Purchasing Options)
+* ***Reserved Instances***: Purchase, at a significant discount instance that are always available. 1 - 3yrs terms. (Purchasing Options)
+* ***Scheduled Instances***: Purchase instances that are always available on the specified recurring schedule for a one-year term. (Purchasing Options)
+* ***Spot Instances***: Bid on unused instances which can run as long as they are available and your bid is above the SPOT price. (Purchasing Options)
+* ***Dedicated Instances***: Pay, by the hour, for instances that run on single-tenant hardware (Tenancy Models)
+* ***Dedicated Hosts***: Pay for a physical host that is fully dedicated to running your instances (Tenancy Models)
 
 Elastic Beanstalk (EBS) & Amazon LightSail
 AWS Elastic Beanstalk (PaaS)  is an easy-to-use service for deployment and scaling web applications and services deployed in multiple programming languages and servers such as Apache, Ngnix, Passenger and IIS. EBS automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring.
