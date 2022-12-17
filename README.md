@@ -37,13 +37,13 @@ Cloud Computing enables companies to consume a compute resources (servers, stora
 * Disaster recovery
 * No location constraints
 
-*High Availability*: <p> maintaining acceptable continuous performance despite temporary load fluctuations or failure in services, hardware and datacenter.</p>
-*Disaster Recover*y*: <p> involves a set of policies, tools and procedures to enable recovery or continuation of vital technology infrastructure and systems. When designing Disaster Recovery, consider ***RPO*** (Recovery Point Objective) and ***RTO*** (Recovery Time Objective). Also know as ***BCP*** (Business Continuity Planning).</p>
-*Fault Tolerance*: systems ability to continue operations properly when one or more of its components fails.
-*Cloud Scalability*: is a strategic operation for adding computing resources to support demand. The need to have a system that can handle growth is very important.
-> - *Scale-out/Horizontal Scaling*: upgrade the capacity of the app by increasing the number of host instances. Ex: Load Balancer where app is hosted on multiple instances. Normally done on the application servers or on the frontend.
-> - *Scale-up/Vertical Scaling*: upgrade the capacity of the host where the app is hosted. Ex: increase RAM from 4 to 8 cores. Generally done on the database side.
-*Cloud Elasticity*: <p> represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.</p>
+*High Availability*: <p>maintaining acceptable continuous performance despite temporary load fluctuations or failure in services, hardware and datacenter.</p>
+*Disaster Recovery*: <p>involves a set of policies, tools and procedures to enable recovery or continuation of vital technology infrastructure and systems. When designing Disaster Recovery, consider ***RPO*** (Recovery Point Objective) and ***RTO*** (Recovery Time Objective). Also know as ***BCP*** (Business Continuity Planning).</p>
+*Fault Tolerance*: <p>systems ability to continue operations properly when one or more of its components fails.</p>
+*Cloud Scalability*: <p>is a strategic operation for adding computing resources to support demand. The need to have a system that can handle growth is very important.</p>
+ - *Scale-out/Horizontal Scaling*: <p>upgrade the capacity of the app by increasing the number of host instances. Ex: Load Balancer where app is hosted on multiple instances. Normally done on the application servers or on the frontend.</p>
+ - *Scale-up/Vertical Scaling*: <p>upgrade the capacity of the host where the app is hosted. Ex: increase RAM from 4 to 8 cores. Generally done on the database side.</p>
+*Cloud Elasticity*: <p>represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.</p>
 *Using an Agile environment provided by AWS Cloud, I can release application features much faster than a traditional On-Premise environment*
 
 ### Cloud Service Model
