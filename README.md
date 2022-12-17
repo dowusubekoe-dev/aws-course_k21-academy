@@ -1,5 +1,8 @@
 # K21 - AWS Solution Architect
 
+<p> This the notes I personally made during the K21 Academy Course and additional notes taken from the AWS official documentation site.</p>
+<p> You can clone this repository or contribute by adding any information that I might have missed.</p>
+ 
 ## Introduction to Cloud Computing
 ### Traditional Architecture
 <p> Companies were hosting all their servers and other network resources either in the office or a data center (on-premise).</p>
