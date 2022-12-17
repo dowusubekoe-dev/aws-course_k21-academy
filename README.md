@@ -16,8 +16,8 @@
 - How to deal with natural disasters
 
 ### What is Cloud  Computing?
-<p> Clouding computing is the delivery of computing services: *servers*, *storage*, *databases*, *networking tools*, and *software* over the internet.
-Cloud Computing enables companies to consume a compute resources (servers, storage, or application).</p>
+Clouding computing is the delivery of computing services: *servers*, *storage*, *databases*, *networking tools*, and *software* over the internet.
+Cloud Computing enables companies to consume a compute resources (servers, storage, or application).
 
 ### Cloud Computing Characteristics
 * On-demand self-service (No human intervention needed to get resources)
