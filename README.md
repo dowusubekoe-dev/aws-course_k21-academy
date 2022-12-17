@@ -46,7 +46,7 @@ Cloud Computing enables companies to consume a compute resources (servers, stora
 *Cloud Scalability*: <p>is a strategic operation for adding computing resources to support demand. The need to have a system that can handle growth is very important.</p>
  - *Scale-out/Horizontal Scaling*: <p>upgrade the capacity of the app by increasing the number of host instances. Ex: Load Balancer where app is hosted on multiple instances. Normally done on the application servers or on the frontend.</p>
  - *Scale-up/Vertical Scaling*: <p>upgrade the capacity of the host where the app is hosted. Ex: increase RAM from 4 to 8 cores. Generally done on the database side.</p>
-*Cloud Elasticity*: <p>represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.</p>
+ - *Cloud Elasticity*: <p>represents more of a tactical approach to allocating resources. Elasticity provides the necessary resources required for the current workload but also scales up or down to handle peak utilization period as well as off-peak loads.</p>
 *Using an Agile environment provided by AWS Cloud, I can release application features much faster than a traditional On-Premise environment*
 
 ### Cloud Service Model
