@@ -554,10 +554,11 @@ In AWS Organizations, you can centrally control permissions for the accounts in 
 ### AWS Artifact 
 Is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections: AWS Artifact Agreements and AWS Artifact Reports.
 
+### AWS Shield
+AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.
 A denial-of-service (DoS) attack is a deliberate attempt to make a website or application unavailable to users.
 
-AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.
-
+### AWS Shield Advanced
 AWS Shield Advanced is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks. 
 
 ### AWS Key Management Service (AWS KMS)
