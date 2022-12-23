@@ -565,16 +565,16 @@ AWS Shield Advanced is a paid service that provides detailed attack diagnostics
 Enables you to perform encryption operations through the use of cryptographic keys. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
 
 ### AWS WAF
-Is a web application firewall that lets you monitor network requests that come into your web applications. AWS WAF works together with Amazon CloudFront and an Application Load Balancer. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic.
+Is a web application firewall that lets you monitor network requests that come into your web applications. AWS WAF works together with *Amazon CloudFront* and an *Application Load Balancer*. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic.
 
-To perform automated security assessments, they decide to use Amazon Inspector.
-Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments.
+### Amazon Inspector
+Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. To perform automated security assessments, they decide to use Amazon Inspector.
 
 ### Amazon GuardDuty
 Is a service that provides intelligent threat detection for your AWS infrastructure and resources. It monitors for malicious activity and unauthorized	behavior to protect your AWS account, workloads and data stored in Amazon S3.
 
 ### AWS Secret Manager
-Helps to protect secrets needed to access your application, services and IT resources. The enables you to easily rotate, manage, and retrieve database credentials, API Keys, and other secrets throughout their lifecycle.
+Helps to protect secrets needed to access your application, services and IT resources. This enables you to easily *rotate*, *manage*, *retrieve database credentials*, *API Keys*, and other secrets throughout their lifecycle.
 
 ### AWS IAM Role
 An IAM role is an IAM identity that you can create in your account that has specific permissions and also assign to an AWS service. E.g EC2
