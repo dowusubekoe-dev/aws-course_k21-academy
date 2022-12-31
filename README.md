@@ -550,6 +550,14 @@ AZ_1 AZ_2              = [EC2] [RDS] [EBS]
 ### AWS Organizations 
 To consolidate and manage multiple AWS accounts within a central location.
 In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs). SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.
+* Global service
+* Allow to manage multiple AWS accounts
+* Main account is the **Management account**
+* Member accounts can only be part of one organization
+* Consolidated Billing across all accounts
+* Pricing benefits
+* Shared reserved instances and Savings Plans discounts
+* API available to automate AWS account creation.
 
 ### AWS Artifact 
 Is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections: AWS Artifact Agreements and AWS Artifact Reports.
