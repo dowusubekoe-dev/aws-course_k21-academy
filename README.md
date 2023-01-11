@@ -50,19 +50,17 @@ Cloud Computing enables companies to consume a compute resources (servers, stora
 *Using an Agile environment provided by AWS Cloud, I can release application features much faster than a traditional On-Premise environment*
 
 ### Cloud Service Model
-***Traditional On-Premise*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
-Green: Client Manages
+***Traditional On-Premise*** -
+Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
 
-***IaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
-Green: Client Manages
-Red: Amazon Manages
+***IaaS*** -
+Applications | Data | Runtime | Middleware | O/S | **Virtualization** | **Servers** | **Storage** | **Networking**
 
-***PaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
-Green: Client Manages
-Red: Amazon Manages
+***PaaS*** -
+Applications | Data | **Runtime** | **Middleware** | **O/S** | **Virtualization** | **Servers** | **Storage** | **Networking**
 
-***SaaS*** - Applications | Data | Runtime | Middleware | O/S | Virtualization | Servers | Storage | Networking
-Red: Amazon Manages
+***SaaS*** -
+**Applications** | **Data** | **Runtime** | **Middleware** | **O/S** | **Virtualization** | **Servers** | **Storage** | **Networking**
 
 ### Cloud Deployment Model
 > #### Public Cloud
@@ -82,14 +80,23 @@ Red: Amazon Manages
 * Requires traditional data center staffing and maintenance
 
 ### AWS Overview Comparison
-**Amazon AWS**	        **Microsoft Azure**	        **Google Cloud Platform**
-S3	                    Blob Storage	            Storage
-EC2	                    Virtual Machine	            Compute Engine
-EC2 Container Service	Container Service	        Kubernetes Engine
-Elastic Beanstalk	    Azure App service	        App Engine
-DynamoDB	            Cosmos DB	                Cloud Datastore
-RDS	                    SQL Database	            BigQuery
-Lambda	                Azure Functions	            Cloud Functions
+|**Amazon AWS**	      |  **Microsoft Azure**  |  **Google Cloud Platform** |
+----------------------------------------------------------------------------
+| --- | --- | --- |
+|S3	                  |  Blob Storage	        |  Storage               |
+----------------------------------------------------------------------------
+|EC2	                | Virtual Machine	      | Compute Engine     |
+----------------------------------------------------------------------------
+|EC2 Container Service|  Container Service	  | Kubernetes Engine |
+----------------------------------------------------------------------------
+|Elastic Beanstalk	  | Azure App service	    | App Engine        |
+----------------------------------------------------------------------------
+|DynamoDB	            | Cosmos DB	            | Cloud Datastore   |
+----------------------------------------------------------------------------
+|RDS	                | SQL Database	        |  BigQuery        |
+----------------------------------------------------------------------------
+|Lambda	              |  Azure Functions	    |  Cloud Functions |
+----------------------------------------------------------------------------
 
 ### AWS Global Infrastructure
 AWS Global infrastructure consist of:
@@ -173,7 +180,7 @@ These three (3) services are related to the DevOps Vertical.
 | Integration        | Deeper Integration with other AWS services | Actively working on Integrations                   | Currently runs on ECS                    |
 | Use Case           | Good for native container architecture     | Easy to move on-prem Kubernetes to AWS EKS         | Good for workload which runs on duration |
 
-### AWS Batch	
+### AWS Batch
 <p>AWS Batch enables developers, scientists, and engineers to easily and efficiently  run hundreds of thousands fo batch computing jobs on AWS.</p>
 
 ### AWS Outpost
@@ -184,20 +191,20 @@ These three (3) services are related to the DevOps Vertical.
 - Build
 
 ### Amazon AMI
-Amazon Machine Image provides the information required to launch an instance. 
+Amazon Machine Image provides the information required to launch an instance.
 ***AMI are region specific***, if you need to use an AMI in another region you can copy an AMI into the destination region via ***Copy AMI***.</p>
 
 ### EC2 MetaData & UserData (Both not encrypted)
 ***User data*** is data that is supplied by the user at instance launch in the form of a script. Limited to 16KB
 * *Windows*: http//169.254.169.254/latest/user-data/ also know as the link local address
-* *Linux*: curl http//169.254.169.254/latest/user-data/ 
+* *Linux*: curl http//169.254.169.254/latest/user-data/
 ***MetaData*** is data about your instance that you can use to configure or manage the running instance
 * *Windows*: http//169.254.169.254/latest/meta-data/ also know as the link local address
-* *Linux*: curl http//169.254.169.254/latest/meta-data/ 
+* *Linux*: curl http//169.254.169.254/latest/meta-data/
 
 ### AWS Lambda (Serverless)
 AWS Lambda is a server less compute service that allows you to run code without provisioning or managing servers.
-No manual configuration is done on AWS Lambda but rather run or execute anything as a function. The *function* is stored in *memory* and called by a trigger to execute the code. 
+No manual configuration is done on AWS Lambda but rather run or execute anything as a function. The *function* is stored in *memory* and called by a trigger to execute the code.
 The results is displayed to the user and after that, the system goes into sleep mode. The client only pays for time that code was executed.
 Lambda can be automatically triggered from 140 AWS Services.
 
@@ -228,7 +235,7 @@ Cannot be connected (Cross connection not allowed) from one AZ to another . EBS 
 * *S3 Standard-IA* is ideal for data that is infrequently accessed but requires high availability when needed.
 * *Objects* stored in the *S3 Glacier* storage class can be retrieved within a few minutes to a few hours. By comparison, objects that are stored in the *S3 Glacier Deep Archive* storage class can be retrieved within 12 hours.
 #### S3: Types
-##### S3: Simple Storage Service 
+##### S3: Simple Storage Service
 *Active, frequently assessed data*.
 			Greater or Equal to 3 AZ
 			Is a service that is used to store and retrieve any amount of data, at any point of time, from anywhere through internet. Developers usually use S3 as code 					repositories, where they can save and share the code with encryption and security added on it. The local space created is called Bucket and the item stored in the 			bucket are called Objects.
@@ -271,7 +278,7 @@ Fully managed Lustre file system for compute-intensive workloads. Open source pa
 Is a hybrid cloud storage service that gives a user on-premise access to virtually unlimited cloud storage. Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases. These include moving backups to the cloud, using on-premises file share backed by cloud storage and providing low latency access to data in AWS for non-premises applications. Communication is encrypted.
 
 #### Data Transfer
-* *Snowball* is a form of storage service. Customer moves on-premise data to the snowball and mail it back to AWS to be on S3 bucket	
+* *Snowball* is a form of storage service. Customer moves on-premise data to the snowball and mail it back to AWS to be on S3 bucket
 * *Amazon FSX*(Linux OS)*: 	
 
 
@@ -288,7 +295,7 @@ based on the region selected.
 **NAT device** allows instances in private subnets to connect to the internet, other VPCs, or on-premises networks. These instances can communicate with services outside the VPC but they cannot receive unsolicited connection requests.
 
 ### 2. Firewall: Security Group & Network Access Control Lists
-**Firewall** is a special network device that creates policies in it and these policies defines what traffic can come inside and leave the security boundary. 
+**Firewall** is a special network device that creates policies in it and these policies defines what traffic can come inside and leave the security boundary.
 **Security Groups** acts as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the *instance level*. ***EC2** can be attached up to 8 SG and SG can also be attached to multiple machines*.
 **Network Access Control Lists** is an optional layer of security for your VPC that acts as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level. *Only one subnet can be attached to one NACL*.
 
@@ -320,7 +327,7 @@ AutoScaling: Automatic monitoring, using alerts when there is a rise in the util
 AutoScaling with LB: Elastic Load Balancing automatically distributes your incoming application traffic across all the EC2 instances that you are running. Elastic Load Balancing helps to manage incoming requests by optimally routing traffic so that no one instance is overwhelmed.
 CDN: CloudFront: is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and API to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. Delivers the content through edge location.
 AWS Direct Connect: is a cloud service solution that makes easy to establish a dedicated network connection from on-prem to AWS. Private connectivity between AWS and the on-prem datacenter, office and colocation environment can be established. This reduces network costs and increase bandwidth throughput.
-Amazon Route 53: 
+Amazon Route 53:
 * Simple Routing Policy
 * Weighted Routing Policy
 * Latency Routing Policy
@@ -414,15 +421,15 @@ RDS
 DynamoDB
 ElastiCache
 
-### DynamoDB API 
-##### Data Plane: 
+### DynamoDB API
+##### Data Plane:
 Lets you perform CRUD action on data in a table.
 - Creating Data:  PutItem, BatchWriteItem
 - Reading Data: GetItem, BatchGetItem
 - Updating Data: UpdateItem
 - Deleting Data: DeleteItem, BatchWriteItem
 
-##### Control Plane: 
+##### Control Plane:
 Lets you create and manage DynamoDB	table.
 - Create Table: create a table which includes table name, primary key, throughput settings
 - Describe Table: used to view the details of table
@@ -449,8 +456,8 @@ Scaling	                Vertical Scaling	                                       
 
 
 ## AWS:- Automation & Configuration Management
-Is a IaC spectrum and open source 
-AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. 
+Is a IaC spectrum and open source
+AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code.
 CloudFormation template describes your desired resources and their dependencies - making the launch and configuration together as a stack.
 
 AWS OpsWorks is a configuration management service that provides managed instance of Chef and Puppet. Chef and Puppet are automatic platforms that allow you to use code to automate the configuration of your servers, including deployment, and management across Amazon EC2 instances or on-premise compute environment. OpsWorks lifecycle include;
@@ -543,7 +550,7 @@ AWS manages the security of the cloud, specifically the physical infrastructure 
 Although you cannot visit AWS data centers to see this protection firsthand, AWS provides several reports from third-party auditors. These auditors have verified its compliance with a variety of computer security standards and regulations.
 
 ### AWS Account, Users and Service Scope
-AWS Account (IAM User) = [Global] [Billing] [IAM] [Route 53] 
+AWS Account (IAM User) = [Global] [Billing] [IAM] [Route 53]
 Region_1 Region_2      = [S3] [DynamoDB] [VPC] [ELB]
 AZ_1 AZ_2              = [EC2] [RDS] [EBS]
 
@@ -588,22 +595,22 @@ Helps to protect secrets needed to access your application, services and IT reso
 An IAM role is an IAM identity that you can create in your account that has specific permissions and also assign to an AWS service. E.g EC2
 
 ### Policy Types
->Identity-based policies – 
+>Identity-based policies –
 Attach managed and inline policies to IAM identities (users, groups to which users belong, or roles). Identity-based policies grant permissions to an identity.
 
->Resource-based policies – 
+>Resource-based policies –
 Attach inline policies to resources. Resource-based policies grant permissions to the principal that is specified in the policy. Principals can be in the same account as the resource or in other accounts.
 
->Permissions boundaries – 
+>Permissions boundaries –
 Use a managed policy as the permissions boundary for an IAM entity (user or role). That policy defines the maximum permissions that the identity-based policies can grant to an entity, but does not grant permissions. Permissions boundaries do not define the maximum permissions that a resource-based policy can grant to an entity.
 
->Organizations SCPs – 
+>Organizations SCPs –
 Use an AWS Organizations service control policy (SCP) to define the maximum permissions for account members of an organization or organizational unit (OU). SCPs limit permissions that identity-based policies or resource-based policies grant to entities (users or roles) within the account, but do not grant permissions.
 
->Access control lists (ACLs) – 
+>Access control lists (ACLs) –
 Use ACLs to control which principals in other accounts can access the resource to which the ACL is attached. ACLs are similar to resource-based policies, although they are the only policy type that does not use the JSON policy document structure. ACLs are cross-account permissions policies that grant permissions to the specified principal. ACLs cannot grant permissions to entities within the same account.
 
->Session policies – 
+>Session policies –
 Pass advanced session policies when you use the AWS CLI or AWS API to assume a role or a federated user. Session policies limit the permissions that the role or user's identity-based policies grant to the session. Session policies limit permissions for a created session, but do not grant permissions.
 
 ### Permissions
@@ -611,7 +618,7 @@ Pass advanced session policies when you use the AWS CLI or AWS API to assume a r
 * Add Inline Policy
 
 ### AWS Key Management Service
-AWS KMS makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS Services in your applications. 
+AWS KMS makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS Services in your applications.
 * AWS KMS is secured and resilient service that uses hardware security modules that have been validated under FIPS 140-2
 * Primary key of AWS KMS is to encrypt the data when the data is at rest.
 * Storage can be on a Block or File storage
@@ -656,6 +663,3 @@ Three (3) Tiers of Architecture
 ### AWS Marketplace
 Is a digital catalog that includes thousands of software listings from independent software vendors. 
 ￼
-
-
-
