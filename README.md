@@ -127,18 +127,18 @@ AWS Global infrastructure consist of:
 * *IAM Roles*: define a set of permissions for making AWS service requests. Roles are basically assigned to the applications.
 
 ### AWS Security Token Service (STS)
-<p> Is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate.</p>
+Is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate.
 
 ### Firewall: NACL & Security Group
-<p> A *security group* acts as a virtual firewall for your instances to control inbound and outbound traffic. Five (5) security groups can be assigned to an instance after creating it. Security Groups act at the instance level but not at the subnet level. Only Allow rules can be created in a security group.</p>
+A *security group* acts as a virtual firewall for your instances to control inbound and outbound traffic. Five (5) security groups can be assigned to an instance after creating it. Security Groups act at the instance level but not at the subnet level. Only Allow rules can be created in a security group.
 
-<p> A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. Allow and Deny rules can be created under ACL.</p>
+A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. Allow and Deny rules can be created under ACL.
 
-<p> AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across wide range of AWS Services and in your applications. AWS KMS is a secured and resilient service that uses hardware security modules that have been validated under FIPS 140-2. It is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet regulatory and compliance needs.</p>
+AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across wide range of AWS Services and in your applications. AWS KMS is a secured and resilient service that uses hardware security modules that have been validated under FIPS 140-2. It is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet regulatory and compliance needs.
 
 ## AWS:- Compute Services
 ### Amazon EC2 (Virtual Server)
-<p> Amazon Elastic Compute Cloud provides scalable computing capacity in the Amazon Web Services Cloud. Amazon EC2 can be used to launch virtual severs, configure security and networking and manage storage. EC2 also enable scaling up or down to handle changes in requirement and spikes.</p>
+Amazon Elastic Compute Cloud provides scalable computing capacity in the Amazon Web Services Cloud. Amazon EC2 can be used to launch virtual severs, configure security and networking and manage storage. EC2 also enable scaling up or down to handle changes in requirement and spikes.
 
 ***Reduce risk***: Durable and secure, avoid risk of physical media handling.
 
@@ -159,8 +159,8 @@ AWS Global infrastructure consist of:
 * ***Dedicated Hosts***: Pay for a physical host that is fully dedicated to running your instances (Tenancy Models)
 
 ### Elastic Beanstalk (EBS) & Amazon LightSail
-*AWS Elastic Beanstalk (PaaS)*:  <p>is an easy-to-use service for deployment and scaling web applications and services deployed in multiple programming languages and servers such as Apache, Ngnix, Passenger and IIS. EBS automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring.</p>
-*Amazon LightSail*: <p>is an easy to use cloud platform that offers everything needed to build an application or website, plus a cost efficient plan.</p>
+*AWS Elastic Beanstalk (PaaS)*:  is an easy-to-use service for deployment and scaling web applications and services deployed in multiple programming languages and servers such as Apache, Ngnix, Passenger and IIS. EBS automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring.
+*Amazon LightSail*: is an easy to use cloud platform that offers everything needed to build an application or website, plus a cost efficient plan.
 * ***EBS*** is scalable, durable, and reliable*
 
 ### ECS, EKS, Fargate
@@ -174,10 +174,10 @@ These three (3) services are related to the DevOps Vertical.
 | Use Case     | Good for native container architecture     | Easy to move on-prem Kubernetes to AWS EKS      | Good for workload which runs on duration |
 
 ### AWS Batch
-<p>AWS Batch enables developers, scientists, and engineers to easily and efficiently  run hundreds of thousands fo batch computing jobs on AWS.</p>
+AWS Batch enables developers, scientists, and engineers to easily and efficiently  run hundreds of thousands fo batch computing jobs on AWS.
 
 ### AWS Outpost
-<p>Fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premise facility or a truly consistent hybrid experience.</p>
+Fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premise facility or a truly consistent hybrid experience.
 - Order
 - Install
 - Launch
@@ -185,7 +185,7 @@ These three (3) services are related to the DevOps Vertical.
 
 ### Amazon AMI
 Amazon Machine Image provides the information required to launch an instance.
-***AMI are region specific***, if you need to use an AMI in another region you can copy an AMI into the destination region via ***Copy AMI***.</p>
+***AMI are region specific***, if you need to use an AMI in another region you can copy an AMI into the destination region via ***Copy AMI***.
 
 ### EC2 MetaData & UserData (Both not encrypted)
 ***User data*** is data that is supplied by the user at instance launch in the form of a script. Limited to 16KB
@@ -227,26 +227,28 @@ Cannot be connected (Cross connection not allowed) from one AZ to another . EBS 
 * *S3 Intelligent-Tiering* monitors access patterns of objects and automatically moves them between the S3 Standard and S3 Standard-IA storage classes. It is not designed for archival data.
 * *S3 Standard-IA* is ideal for data that is infrequently accessed but requires high availability when needed.
 * *Objects* stored in the *S3 Glacier* storage class can be retrieved within a few minutes to a few hours. By comparison, objects that are stored in the *S3 Glacier Deep Archive* storage class can be retrieved within 12 hours.
+
 #### S3: Types
 ##### S3: Simple Storage Service
 *Active, frequently assessed data*.
-			Greater or Equal to 3 AZ
-			Is a service that is used to store and retrieve any amount of data, at any point of time, from anywhere through internet. Developers usually use S3 as code 					repositories, where they can save and share the code with encryption and security added on it. The local space created is called Bucket and the item stored in the 			bucket are called Objects.
+Greater or Equal to 3 AZ
+Is a service that is used to store and retrieve any amount of data, at any point of time, from anywhere through internet. Developers usually use S3 as code repositories, where they can save and share the code with encryption and security added on it. The local space created is called Bucket and the item stored in the bucket are called Objects.
+
 ##### S3 Intelligent-Tiering
 *Data with changing access patterns*.
-			Greater or Equal to 3 AZ
+Greater or Equal to 3 AZ
 ##### S3 Standard-IA
 *Infrequently accessed data*
-			Greater or Equal to 3 AZ
+Greater or Equal to 3 AZ
 ##### S3 One Zone-IA
 *Recreatable, less accessed data*
-			Equal to 1 AZ
+Equal to 1 AZ
 ##### S3 Glacier
 *Archive data*
-			Greater or Equal to 3 AZ
+Greater or Equal to 3 AZ
 ##### S3 Glacier Deep Archive
-		Long-term archive-data
-			Greater or Equal to 3 AZ
+Long-term archive-data
+Greater or Equal to 3 AZ
 *Economical*: Pay as you go, No upfront investment, No commitment.
 #### Amazon Glazier
 *Amazon S3 Glacier* is a secure and durable service for low-cost data archiving and long-term backup. For infrequently accessed data. Self service administration, SDK for 	simple integration.
@@ -273,7 +275,6 @@ Is a hybrid cloud storage service that gives a user on-premise access to virtual
 #### Data Transfer
 * *Snowball* is a form of storage service. Customer moves on-premise data to the snowball and mail it back to AWS to be on S3 bucket
 * *Amazon FSX*(Linux OS)*: 	
-
 
 ## AWS:- Networking Services
 ### 1. Virtual Private Cloud
@@ -309,17 +310,17 @@ Connects VPCs and on-premises network through a central hub. This simplifies net
 A server whose purpose is to provide access to a private network from an external network, such as the internet.
 
 ### Load Balancer, AutoScaling, CloudFront, Direct Connect, & Route 53
-High Availability: Has minimum loss of service. Use a Load Balancer to achieve HA.
+* High Availability: Has minimum loss of service. Use a Load Balancer to achieve HA.
 * Application Load Balancer: when you need a flexible feature set for your web applications with HTTP and HTTPS traffic. Layer 7 (Application Layer)
 * Network Load Balancer: when you need ultra-high performance, TLS offloading at scale, centralized certificate deployment, support TCP/UDP, and static IP addresses for your application.
 * Gateway Load Balancer: when you need to deploy and manage a fleet of third-party virtual applications that support GENEVE. These appliance enable you to improve security, compliance, and policy controls. Uses the IP address for Load Balancing.
 * Classic Load Balancer: when you have an existing application running in the EC2-Classic network. No more use.
+* Fault Tolerance: Has loss of service when the primary host goes down.
+* AutoScaling: Automatic monitoring, using alerts when there is a rise in the utilization of the initial servers.
+* AutoScaling with LB: Elastic Load Balancing automatically distributes your incoming application traffic across all the EC2 instances that you are running. Elastic Load Balancing helps to manage incoming requests by optimally routing traffic so that no one instance is overwhelmed.
+* CDN: CloudFront: is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and API to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. Delivers the content through edge location.
+* AWS Direct Connect: is a cloud service solution that makes easy to establish a dedicated network connection from on-prem to AWS. Private connectivity between AWS and the on-prem datacenter, office and colocation environment can be established. This reduces network costs and increase bandwidth throughput.
 
-Fault Tolerance: Has loss of service when the primary host goes down.
-AutoScaling: Automatic monitoring, using alerts when there is a rise in the utilization of the initial servers.
-AutoScaling with LB: Elastic Load Balancing automatically distributes your incoming application traffic across all the EC2 instances that you are running. Elastic Load Balancing helps to manage incoming requests by optimally routing traffic so that no one instance is overwhelmed.
-CDN: CloudFront: is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and API to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. Delivers the content through edge location.
-AWS Direct Connect: is a cloud service solution that makes easy to establish a dedicated network connection from on-prem to AWS. Private connectivity between AWS and the on-prem datacenter, office and colocation environment can be established. This reduces network costs and increase bandwidth throughput.
 Amazon Route 53:
 * Simple Routing Policy
 * Weighted Routing Policy
@@ -327,7 +328,6 @@ Amazon Route 53:
 * Failover Routing Policy
 * Geo-Location Routing Policy
 * Multivalued Routing Policy
-
 
 ## AWS:- Databases
 Database is a collection of individual data items which is stored in a highly structured manner.
@@ -406,7 +406,7 @@ Database is a collection of individual data items which is stored in a highly st
 * TTL can be set to automatically delete items in the table once they expire.
 * Operations such as CREATE, INSERT, UPDATE, QUERY, SCAN and DELETE are performed in a table via appropriate API.
 
-Questions:
+**Questions:**
 business critical application
 Cloud-native application they seek to use fully managed services to increase agility, reduce time to market, and  minimize operational overhead
 Key-value
@@ -440,13 +440,13 @@ API’s used are:
 - Get Records: retrieves the stream records within a given shared
 
 ### Difference between SQL and NoSQL
-**Characteristics**	    **SQL**	                                                                    **NoSQL**
-Workloads	            Adhoc queries, data warehousing, OLAP	Web-scale applications
-Data Model	            Well defined schema where data is normalized into tables, rows and columns	Schema-less with a primary key and manages structured or semi-structured data.
-Data Access	            SQL	                                                                        AWS Management Console or AWS CLI and perform adhoc tasks
-Performance	            Optimized for storage	                                                    Optimized for compute
-Scaling	                Vertical Scaling	                                                        Horizontal scaling (cluster of DBs)
-
+| Characteristics   |      SQL           |     NoSQL         |
+| :---------------- | :----------------- | :---------------- |
+| Workloads   | Adhoc queries, data warehousing, OLAP  |  Web-scale applications   |
+| Data Model  | Well defined schema where data is normalized into tables, rows and columns  | Schema-less with a primary key and manages structured or semi-structured data  |
+| Data Access | SQL | AWS Management Console or AWS CLI and perform adhoc tasks   |
+| Performance   | Optimized for storage   | Optimized for compute    |
+| Scaling    | Vertical Scaling          | Horizontal scaling (cluster of DBs)   |
 
 ## AWS:- Automation & Configuration Management
 Is a IaC spectrum and open source
@@ -482,54 +482,58 @@ With CloudWatch, you can create alarms that automatically perform actions if t
 The CloudWatch dashboard feature enables you to access all the metrics for your resources from a single location. For example, you can use a CloudWatch dashboard to monitor the CPU utilization of an Amazon EC2 instance, the total number of requests made to an Amazon S3 bucket, and more.
 AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices. Categories include Performance and Fault tolerance.
 
-
 ## AWS:- Application Services SNS, SES, SQS, & SWF
-Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
+### Amazon Simple Notification Service (Amazon SNS) 
+Is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 * A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, micro servers and event-driven sever less applications.
 * A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 
-Amazon Simple Email Service (SES) is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
-Amazon SWF helps developers build, run, and scale background jobs that have parallel or sequential steps. Also known as a fully managed state tracker and task coordinator in the cloud.
-
+### Amazon Simple Email Service (SES)
+Is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
+### Amazon SWF 
+Helps developers build, run, and scale background jobs that have parallel or sequential steps. Also known as a fully managed state tracker and task coordinator in the cloud.
 
 ## AWS:- DevOps Tools
-AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. Helps team to collaborate on code in a highly scalable ecosystem. Eliminates the need to operate your own source control system.
+### AWS CodeCommit 
+Is a fully-managed source control service that hosts secure Git-based repositories. Helps team to collaborate on code in a highly scalable ecosystem. Eliminates the need to operate your own source control system.
 
-AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. No need to provision, manage, and scale your own servers so it scales continuously  and processes multiple builds concurrently.
+### AWS CodeBuild 
+Is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. No need to provision, manage, and scale your own servers so it scales continuously  and processes multiple builds concurrently.
 
-AWS CodeCommit + CodeBuild
+### AWS CodeDeploy 
+Is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your own on-premises server.
 
-AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your own on-premises server.
-
-AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. It automates the build, test, and deploy phases of your release process every time there is a code change, based on the release modem you define.
+### AWS CodePipeline 
+Is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. It automates the build, test, and deploy phases of your release process every time there is a code change, based on the release modem you define.
 * Source
 * Build
 * Test
 * Staging
 * Production
 
-AWS CodeStar is a cloud-based development service that provides the tools you need to quickly develop, build, and deploy application on AWS.
-
+**AWS CodeStar is a cloud-based development service that provides the tools you need to quickly develop, build, and deploy application on AWS.**
 
 ## AWS:- Security
 ### Shared Responsibility Model
 AWS controls the security of the cloud and the customer controls the security in the cloud.
 ￼
-
 #### Customers: Security in the cloud
 Customers are responsible for the security of everything that they create and put in the AWS Cloud.
 When using AWS services, you, the customer, maintain complete control over your content. You are responsible for managing security requirements for your content, including which content you choose to store on AWS, which AWS services you use, and who has access to that content. You also control how access rights are granted, managed, and revoked.
  
-The security steps that you take will depend on factors such as the services that you use, the complexity of your systems, and your company’s specific operational and security needs. Steps include selecting, configuring, and patching the operating systems that will run on Amazon EC2 instances, configuring security groups, and managing user accounts. 
+The security steps that you take will depend on factors such as the services that you use, the complexity of your systems, and your company’s specific operational and security needs. 
+Steps include selecting, configuring, and patching the operating systems that will run on Amazon EC2 instances, configuring security groups, and managing user accounts. 
 * Patching software on Amazon EC2 instances
 * Setting permissions for Amazon S3 objects
 
 #### AWS: Security of the cloud
 AWS is responsible for security of the cloud.
  
-AWS operates, manages, and controls the components at all layers of infrastructure. This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate. 
+AWS operates, manages, and controls the components at all layers of infrastructure. 
+This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate. 
  
-AWS is responsible for protecting the global infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure includes AWS Regions, Availability Zones, and edge locations.
+AWS is responsible for protecting the global infrastructure that runs all of the services offered in the AWS Cloud. 
+This infrastructure includes AWS Regions, Availability Zones, and edge locations.
  
 AWS manages the security of the cloud, specifically the physical infrastructure that hosts your resources, which include:
 * Physical security of data centers
@@ -621,7 +625,6 @@ AWS KMS makes it easy for you to create and manage cryptographic keys and contro
 ### AWS Power User
 A Power user can have access to every service but limited to IAM.
 
-
 ## AWS:- Pricing and Support
 AWS Partner Network: is the global community of Partners who leverage Amazon Web Services to build solutions and services to customers.
 - Build, market, and sell with AWS Partner Network
@@ -633,7 +636,6 @@ AWS Partner Network: is the global community of Partners who leverage Amazon Web
 Partial Upfront - Pay as you go
 All Upfront - Pay less when you reserve
 Pay even less per unit by using more
-
 
 ## AWS:- Five Pillars of the Well-Architected Framework
 	- Operational Excellence: run, manage, and monitor production workload to deliver business value and continuous improvement on support process and events
