@@ -80,23 +80,17 @@ Applications | Data | **Runtime** | **Middleware** | **O/S** | **Virtualization*
 * Requires traditional data center staffing and maintenance
 
 ### AWS Overview Comparison
-|**Amazon AWS**	      |  **Microsoft Azure**  |  **Google Cloud Platform** |
-----------------------------------------------------------------------------
-| --- | --- | --- |
-|S3	                  |  Blob Storage	        |  Storage               |
-----------------------------------------------------------------------------
-|EC2	                | Virtual Machine	      | Compute Engine     |
-----------------------------------------------------------------------------
-|EC2 Container Service|  Container Service	  | Kubernetes Engine |
-----------------------------------------------------------------------------
-|Elastic Beanstalk	  | Azure App service	    | App Engine        |
-----------------------------------------------------------------------------
-|DynamoDB	            | Cosmos DB	            | Cloud Datastore   |
-----------------------------------------------------------------------------
-|RDS	                | SQL Database	        |  BigQuery        |
-----------------------------------------------------------------------------
-|Lambda	              |  Azure Functions	    |  Cloud Functions |
-----------------------------------------------------------------------------
+
+
+| Amazon AWS         |      Microsoft Azure       |     Google Cloud Platform |
+| :----------------: | :-----------------: | -----------: |
+| S3 | Blob Storage |        Storage |
+| EC2       |    Virtual Machine    | Compute Engine |
+| EC2 Container Service       |    Container Service    | Kubernetes Engine |
+| Elastic Beanstalk       |    Azure App service    | App Engine |
+| DynamoDB       |    Cosmos DB    | Cloud Datastore |
+| RDS       |    SQL Database    | BigQuery |
+| Lambda       |    Azure Functions    | Cloud Functions |
 
 ### AWS Global Infrastructure
 AWS Global infrastructure consist of:
