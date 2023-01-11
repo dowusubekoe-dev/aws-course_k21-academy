@@ -1,4 +1,4 @@
-# K21 - AWS Solution Architect
+# K21 Academy - AWS Solution Architect
 
 <p> This is the notes I personally made during the K21 Academy Course and additional notes taken from the AWS official documentation site.</p>
 <p> You can clone this repository or contribute by adding any information that I might have missed.</p>
