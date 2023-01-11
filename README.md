@@ -83,7 +83,7 @@ Applications | Data | **Runtime** | **Middleware** | **O/S** | **Virtualization*
 
 
 | Amazon AWS         |      Microsoft Azure       |     Google Cloud Platform |
-| :----------------: | :-----------------: | -----------: |
+| :---------------- | :----------------- | :----------- |
 | S3 | Blob Storage |        Storage |
 | EC2       |    Virtual Machine    | Compute Engine |
 | EC2 Container Service       |    Container Service    | Kubernetes Engine |
