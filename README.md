@@ -166,7 +166,7 @@ AWS Global infrastructure consist of:
 ### ECS, EKS, Fargate
 These three (3) services are related to the DevOps Vertical.
 | Topics          |      Elastic Container (ECS)       |     Elastic Kubernetes Service (EKS) | AWS Fargate (Fargate)    |
-| :---------------- | :-----------------: | -----------: | :-------------- |
+| :---------------- | :----------------- | :-----------: | :-------------- |
 | Definition   | Container Orchestration: By AWS   | Managed Kubernetes (Open Source) Platform by AWS   | Container on-demand     |
 | Cluster Creation   | Requires      | Requires       | Not Required      |
 | Control Plane Cost | 0, pay for work nodes       | 144 $’, Pay for work nodes     | Pay for task based on CPU & Memory     |
